@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Door number two</title>
+    <style>
+        img { max-width: 100%; }
+        body { padding-top: 2%; max-width: 500px !important; }
+        ul.row.nav { list-style: none;
+               padding-top: 10px; padding-bottom: 10px;
+               margin-top: 10px; margin-bottom: 10px;
+               border-top: 2px solid #ccc;
+               border-bottom: 2px solid #ccc;
+               margin-left: 0px; margin-right: 0px;
+             }
+        .nav li { text-align: center; }
+
+        #banner-image {
+            background-image: url(letters.jpeg);
+            background-position: 60% 50%;
+            background-size: 150%; 
+            height: 200px;
+        }
+
+        .content {
+            padding-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body class='container'>
+  <div class='row'>
+    <div class='branding col-12'>
+        <img src='Khayr.png' class='logo' />
+    </div>
+  </div>
+
+
+  <ul class='row nav'>
+    <li class='col-4'>Products</li>
+    <li class='col-4'>Projects</li>
+    <li class='col-4'>Contact </li>
+  </ul>
+  <div class='row content'>
+    <div class='col-8'>
+        Having a square logo so large, means that even after restricting the
+        width, most of screen space is taken up by the logo. While there may be
+        more vertical space on a large Mac screen, it will still be scrunched
+        up into a narrow space.
+    </div>
+    <div class='col-4'>
+    </div>
+  </div>
+
+  <div class='content row'>
+    <div class='col-4'>
+    </div>
+    <div class='col-8'>
+        <!-- TODO: We use the background to speciy the image so that we
+             can avoid cropping the image each time we resize.
+             I'd rather have some sort of DSL that allows specifying the
+             cropping, sizing etc and allows generating multiple
+             images that can handle responsive choices too. -->
+        <div id='banner-image'/></div>
+    </div>
+  </div>
+
+  </body>
+</html>
