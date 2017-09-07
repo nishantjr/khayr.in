@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>En fin, the Third Door</title>
+    <style>
+        img { max-width: 100%; }
+        body { padding-top: 2%; }
+        nav {
+               border-top: 2px solid #ccc;
+               border-bottom: 2px solid #ccc;
+               margin-top: 15px;
+               margin-left: 15px; margin-right: 0px;
+               text-align: center;
+               text-transform: uppercase;
+               font-size: 18px;
+             }
+        nav div { padding-top: 2px; padding-bottom: 2px; }
+        h1 { text-align: center;
+        border-bottom: 2px solid #ccc;
+           }
+
+        #banner-image {
+            background-image: url(letters.jpeg);
+            background-position: 60% 50%;
+            background-size: 150%;
+            height: 200px;
+        }
+
+        .content {
+            padding-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body class='container'>
+  <div class='row'>
+  <div class='col-3'>
+    <img src='Khayr.png' class='logo' />
+    <nav>
+      <div>Products</div>
+      <div>Projects</div>
+      <div>Contact </div>
+    </nav>
+  </div>
+  <div class='col-9'>
+  <div class='row title'>
+    <div class='col-12'> <h1>This is a title</h1> </div>
+  </div>
+  <div class='row'>
+    <div class='col-4'>
+    </div>
+    <div class='col-8 content'>
+        <!-- TODO: We use the background to speciy the image so that we
+             can avoid cropping the image each time we resize.
+             I'd rather have some sort of DSL that allows specifying the
+             cropping, sizing etc and allows generating multiple
+             images that can handle responsive choices too. -->
+        <div id='banner-image'/></div>
+    </div>
+  </div>
+  <div class='row content'>
+    <div class='col-8'>
+    <strong>
+    Having a title at the top may be nice for the product / projects page, and
+    go nicely with this design? Does tht make sense? What do you think...
+    </strong>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+    maximus nisi eget faucibus fringilla. Aenean vel orci massa. Aliquamlacerat.
+    Aliquam eget convallis eros.
+    </div>
+    <div class='col-4'>
+    </div>
+  </div>
+
+  <div class='content row'>
+    <div class='col-4'>
+    </div>
+    <div class='col-8'>
+    purus eu, pulvinar enim. Nunc eros nulla, rutrum eget dui et, rhoncus tristique
+    lectus. In eget fringilla nisi. Etiam sapien eros, mattis sit amet libero vitae,
+    vulputate hendrerit lorem. Donec justo eros, commodo id mauris vel, ornare
+    blandit leo. Mauris eleifend metus elit, sit amet dapibus urna tempor ut. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+    himenaeos. Quisque vel nunc nulla.
+    </div>
+  </div>
+
+  </div>
+  </div>
+  </body>
+</html>
