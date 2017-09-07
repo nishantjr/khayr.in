@@ -2,38 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Khayr</title>
+    <title>Behind Door One</title>
     <style>
         img { max-width: 100%; }
-        body { padding-top: 20px; }
+        body { padding-top: 2%; }
+        .logo { margin-left: -7%; }
+        ul.row.nav { list-style: none;
+               padding-top: 10px; padding-bottom: 10px;
+               margin-top: 10px; margin-bottom: 10px;
+               border-top: 2px solid #ccc;
+               border-bottom: 2px solid #ccc;
+               margin-left: 0px; margin-right: 0px;
+             }
+        .nav li { text-align: center; }
+
+        #banner-image {
+            background-image: url(letters.jpeg);
+            background-position: 60% 50%;
+            background-size: 150%; height: 100%
+        }
+
+        .content {
+            padding-bottom: 10px;
+        }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body class='container'>
   <div class='row'>
     <div class='branding col-4'>
-        <img src='Khayr.png' />
+        <img src='Khayr.png' class='logo' />
     </div>
-    <div class='content col-8'>
-        <img src='letters-cropped.jpeg' style='margin-top: 8px;' />
+    <div class='col-8'>
+        <!-- TODO: We use the background to speciy the image so that we
+             can avoid cropping the image each time we resize.
+             I'd rather have some sort of DSL that allows specifying the
+             cropping, sizing etc and allows generating multiple
+             images that can handle responsive choices too. -->
+        <div id='banner-image'/></div>
     </div>
   </div>
-  <div class='row'>
-
+  <ul class='row nav'>
+    <li class='col-4'>Products</li>
+    <li class='col-4'>Projects</li>
+    <li class='col-4'>Contact </li>
+  </ul>
+  <div class='row content'>
     <div class='col-8'>
+        Above the fold is the upper half of the front page of a newspaper or
+        tabloid where an important news story or photograph is often located.
+        Papers are often displayed to customers folded so that only the top half
+        of the front page is visible. Thus, an item that is "above the fold"
+        may be one that the editors feel will entice people to buy the paper.
     </div>
-
-    <div class='content col-4'>
-        <p> Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. </p>
-
-        <footer> ©2017 - Deepa Rodrigues </footer>
+    <div class='col-4'>
     </div>
+  </div>
 
+  <div class='content row'>
+    <div class='col-4'>
+    </div>
+    <div class='col-8'>
+        Above the fold is also used in website design (along with "above the
+        scroll") to refer to the portion of the webpage that is visible
+        without scrolling.
+        A 2006 study by Jakob Nielsen found that 77% of visitors to a
+        website do not scroll,[3] and therefore only see the portion of
+        the website that is above the fold.
+
+        <strong>But, really, don't take me too seriously :-P</strong>
+    </div>
   </div>
   </body>
 </html>
